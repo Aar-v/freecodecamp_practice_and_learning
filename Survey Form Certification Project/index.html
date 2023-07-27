@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">SURVEY FORM</h1>
+    <p id="description"> Thank you for taking the time to help us improve the platform </p>
+     <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+     <fieldset>
+       <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required></label>
+       <label for="email" id="email-label">E-mail: <input id="email" type="email" placeholder="Enter your E-mail" required></label>
+       <label for="number" id="number-label">Number: <input id="number" type="number" min="0" max="100000000" placeholder="Enter your number"required></label>
+     </fieldset>
+     <fieldset>
+          <label for="personal-account"><input value="personal-account" id="personal-account" type="radio" name="account-type" class="inline" /> Personal Account</label>
+        <label  for="business-account"><input value="business-account" id="business-account" type="radio" name="account-type" class="inline" /> Business Account</label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="checked" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+        <label for="verified">
+          <input id="verified" type="checkbox" required name="verified" class="inline" value="checked" /> The information is verified. terms and conditions</a>
+        </label>
+        <label for="dropdown">How did you hear about us?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+     </fieldset>
+     <input id="submit" type="submit" value="Submit" />
+     </form>
+  </body>
+ </html> 
